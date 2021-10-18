@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="style.css">
+    <title>Title</title>
+    <script src="script.js">
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="flex">
+        <div class="poster">
+            <img class="logo" src="img/logo.png">
+            <img class="man" src="img/man.png">
+            <div class="text">Повертайся у
+                <span class="italic">гру</span> з бонусом
+            </div>
+        </div>
+        <div class="blue">
+            <h1 class="title">Нідерланди <span class="oval vs">VS</span><span class="italic">Україна</span></h1>
+           <div class="numbers">
+               <span class="square">2.04</span>
+               <span class="oval white">X2.4</span>
+               <span class="square italic">2.04</span>
+               <div class="table">
+                   <p class="top">22.04</p>
+                   <p class="bottom">22:00</p>
+               </div>
+            </div>
+            <button class="stavka">Зроби ставку</button>
+            <a onclick="show('block')" class="regButton">Як зробити ставку?</a>
+            <div id="gray"></div>
+            <div id="window">
+                <img class="close" src="img/close.png" alt=""  onclick="show('none')">
+                <div class="stavka-block">
+                    <div class="video-preview" onclick="playVideo(this).style.display='block'; this.style.display='none'">
+                        <img class="video-poster" src="img/video.png" alt="" style="cursor: pointer" />
+                        <button class="play"></button>
+                    </div>
+                    <div class="" style="display: none">
+                        <iframe width="" height="" src="https://www.youtube.com/embed/VaZ5nbsJV4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="content">
+                        <h3 class="video-title">Як зробити ставку?</h3>
+                        <ul class="list">
+                            <li class="item">
+                                Зареєстуйся, якщо ще не з нами
+                            </li>
+                            <li class="item">
+                                Знайди потрібний матч
+                            </li>
+                            <li class="item">
+                                Зроби ставку на потрібний результат
+                            </li>
+                            <li class="item">
+                                У новому вікні введи суму ставки та натисни "ок"
+                            </li>
+                            <li class="item">
+                                Підтверди вибір, натиснувши "Зробити ставку"
+                            </li>
+                        </ul>
+                        <p class="pink"> Ставку зроблено!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bonus"><p class="bonus-text">Бонус 4500</div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="price">
+            <div class="price-block border">
+                <p class="price-title">500₴</p>
+                <p class="prise-subtitle">ставка без ризику</p>
+            </div>
+            <p class="circle">+</p>
+            <div class="price-block">
+                <p class="price-title second"> 4000₴</p>
+                <p class="prise-subtitle">На перший депозит</p>
+            </div>
+        </div>
+        <div class="icons">
+            <div class="plus21">
+            </div>
+            <div class="visa">
+            </div>
+            <div class="mastercard">
+            </div>
+            <button class="apple" href="">
+            </button>
+            <button class="google" href="">
+            </button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    overflow-x: hidden;
+}
+.flex {
+    display: block;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #000055;
+}
+
+.poster {
+    position: relative;
+    background-image: url("img/bg-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 240px;
+}
+
+.blue {
+    position: relative;
+    background: #000055;
+    z-index: 3;
+}
+
+.logo {
+    max-width: 260px;
+}
+
+.text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 23px;
+    color: #fff;
+    background: #FF267E;
+    z-index: 2;
+    text-transform: none;
+}
+
+.vs {
+    position: absolute;
+    left: 46px;
+    top: 88px;
+}
+
+.oval {
+    font-size: 21px;
+    color: #FF267E;
+    padding: 5px 8px;
+    border: 1px solid #FF267E;
+    border-radius: 50%;
+    font-weight: bold;
+    align-items: center;
+}
+
+.square {
+    font-size: 21px;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 20px;
+    border: 1px solid #FF267E;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.numbers {
+    display: flex;
+    height: 50px;
+    padding: 20px 0 50px 20px;
+}
+
+.italic {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.white {
+    color: #fff;
+    padding: 10px 12px;
+    margin-right: 20px;
+}
+
+.table {
+    color: #fff;
+    font-weight: bold;
+}
+
+.top {
+    width: 70px;
+    padding: 5px 8px;
+    border: 1px solid #fff;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+    text-align: center;
+    background-color: #FF267E;;
+}
+
+.bottom {
+    width: 70px;
+    padding: 5px 8px;
+    border: 1px solid #fff;
+    border-radius: 0 0 10px 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.man {
+    position: absolute;
+    left: 120px;
+    top: 90px;
+    height: 200px;
+    transform: scale(1.5);
+}
+
+.stavka {
+    display: block;
+    width: 90%;
+    height: 50px;
+    background-color: #05C489;
+    color: #000055;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto 20px;
+}
+
+.title {
+    max-width: 400px;
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.icons {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 30px;
+    max-width: 85%;
+}
+
+.plus21 {
+    width: 30px;
+    height: 20px;
+    background-image: url("img/21-mob.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.visa {
+    width: 30px;
+    height: 20px;
+    background-image: url("img/visa-mob.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.mastercard {
+    width: 30px;
+    height: 20px;
+    background-image: url("img/mastercard-mob.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.apple {
+    width: 100px;
+    height: 50px;
+    background-image: url("img/apple-mob.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.google {
+    width: 110px;
+    height: 50px;
+    background-image: url("img/google-mob.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.bonus {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    color: #000055;
+    background: #FF267E;
+    position: relative;
+}
+
+.bonus-text {
+    padding-top: 5px;
+}
+
+.bonus-text:before {
+    content:url("img/arrow.png");
+    position: absolute;
+    left: 80px;
+}
+
+.bonus-text:after {
+    content:url("img/arrow.png");
+    position: absolute;
+    right: 80px;
+}
+
+.price {
+    display: flex;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.price-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.second {
+    margin-left: 20px;
+}
+
+.prise-subtitle {
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.circle {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.italic {
+    font-family: Lora;
+    font-style: italic;
+}
+
+.stavka-block {
+    color: #000055;
+}
+
+.list {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: none;
+    max-width: 270px;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+.regButton {
+    color: #CCCCCC;
+    font-weight: bold;
+    text-decoration: underline;
+    border: none;
+    padding: 6px 24px;
+    cursor: pointer;
+    margin-left: 20%;
+}
+
+#window {
+    display: none;
+    max-width: 350px;
+    height: 530px;
+    margin: 70px auto 0;
+    background: #fff;
+    border: 1px solid #fff;
+    z-index: 150;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+}
+
+.video-preview {
+    position: relative;
+}
+
+.video-poster {
+    max-width: 310px;
+    margin: 20px;
+}
+
+.video-title {
+    margin-left: 20px;
+    font-weight: bold;
+    max-width: 150px;
+}
+
+.pink {
+    color: #FF267E;
+    text-transform: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+iframe {
+    width: 350px;
+}
+
+.play {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background-image: url("img/play.png");
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.play:hover {
+    transform: scale(1.1);
+}
+
+.close {
+    position: absolute;
+    margin: -51px 0 0 301px;
+    cursor: pointer;
+    background: #FF267E;
+}
+
+#gray {
+    opacity: 0.8;
+    padding: 15px;
+    background-color: #000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    display: none;
+    z-index:100;
+    overflow: auto;
+}
+
+.footer {
+    background: #000055;
+    position: relative;
+    z-index: 5;
+}
+
+@media screen and (min-width: 768px) {
+    .bonus {
+        display: none;
+    }
+
+    .poster {
+        min-height: 480px;
+    }
+
+    .man {
+        height: 350px;
+        top: 105px;
+    }
+
+    .blue {
+        min-height: 480px;
+    }
+
+    .price {
+        position: relative;
+        padding-top: 0;
+    }
+    .price-block {
+        display: flex;
+        padding-top: 5px;
+    }
+
+    .prise-subtitle {
+        font-size: 12px;
+        max-width: 100px;
+        color: #FF267E;
+        margin: 10px;
+    }
+
+    .circle {
+        position: absolute;
+        left: 172px;
+        bottom: -4px;
+        color: #FF267E;
+        border: 1px solid #FF267E;
+        background:  #000055;
+    }
+
+    .regButton {
+        margin-left: 35%;
+    }
+
+    .border {
+        border-right: 1px solid #FF267E;
+    }
+
+    .text {
+        height: 60px;
+        font-size: 40px;
+        padding-top: 10px;
+    }
+
+    .footer {
+        display: flex;
+        border-top: 1px solid #FF267E;
+    }
+
+    .icons {
+        padding-top: 10px;
+    }
+
+    .plus21 {
+        background-image: url("img/21.svg");
+    }
+
+    .visa {
+        background-image: url("img/visa.svg");
+    }
+
+    .mastercard {
+        background-image: url("img/mastercard.svg");
+    }
+
+    .apple {
+        background-image: url("img/apple.png");
+    }
+
+    .google {
+        background-image: url("img/google.png");
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .flex {
+        display: flex;
+    }
+
+    .man {
+        max-width: 550px;
+        height: auto;
+        bottom: 0;
+        left: 280px;
+        top: 180px;
+        position: absolute;
+    }
+
+    .circle {
+        left: 218px;
+    }
+
+    .text {
+        max-width: 810px;
+        margin-left: 115px;
+    }
+
+    .price-title {
+        font-size: 40px;
+        letter-spacing: 6px;
+    }
+
+    .poster {
+        width: 60%;
+    }
+
+    .blue {
+        position: relative;
+        width: 40%;
+        min-height: 660px;
+    }
+
+    .logo {
+        max-width: 60%;
+    }
+
+    .stavka {
+        width: 300px;
+        margin: 120px 0 20px 20px;
+    }
+
+    .stavka-block {
+        display: flex;
+    }
+
+    .regButton {
+        margin-left: 0;
+    }
+
+    .close {
+        margin: -1px 0 0 800px;
+    }
+
+    #window {
+        max-width: 800px;
+    }
+}
+

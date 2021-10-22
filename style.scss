@@ -1,34 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 body {
   font-family: Roboto;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 .container {
   width: 100%;
   height: 100vh;
-  background: #000055; }
+  background: #000055;
+}
 
 .wrap {
-  display: block; }
+  display: block;
+}
 
 .poster {
   position: relative;
   background-image: url("img/bg-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 240px; }
-  .poster__logo {
-    max-width: 260px; }
-  .poster__man {
+  min-height: 240px;
+
+  &__logo {
+    max-width: 260px;
+  }
+
+  &__man {
     position: absolute;
     left: 120px;
     top: 90px;
     height: 200px;
-    transform: scale(1.5); }
-  .poster__text {
+    transform: scale(1.5);
+  }
+
+  &__text {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -39,37 +48,49 @@ body {
     color: #fff;
     background: #FF267E;
     z-index: 2;
-    text-transform: none; }
+    text-transform: none;
+
+  }
+}
 
 .blue {
   position: relative;
   background: #000055;
-  z-index: 3; }
-  .blue__title {
+  z-index: 3;
+
+  &__title {
     max-width: 400px;
     font-size: 48px;
     font-weight: 500;
     color: #fff;
     text-align: center;
     margin: 0;
-    padding-top: 20px; }
-  .blue__vs {
+    padding-top: 20px;
+  }
+
+  &__vs {
     position: absolute;
     left: 46px;
-    top: 88px; }
-  .blue__oval {
+    top: 88px;
+  }
+
+  &__oval {
     font-size: 21px;
     color: #FF267E;
     padding: 5px 8px;
     border: 1px solid #FF267E;
     border-radius: 50%;
     font-weight: bold;
-    align-items: center; }
-    .blue__oval_white {
+    align-items: center;
+
+    &_white {
       color: #fff;
       padding: 10px 12px;
-      margin-right: 20px; }
-  .blue__square {
+      margin-right: 20px;
+    }
+  }
+
+  &__square {
     font-size: 21px;
     color: #fff;
     padding: 5px 10px;
@@ -77,35 +98,45 @@ body {
     border: 1px solid #FF267E;
     font-weight: bold;
     display: flex;
-    align-items: center; }
-  .blue__numbers {
+    align-items: center;
+  }
+
+  &__numbers {
     display: flex;
     height: 50px;
-    padding: 20px 0 50px 20px; }
+    padding: 20px 0 50px 20px;
+  }
+}
 
 .italic {
   font-family: Lora;
   font-style: italic;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 .table {
   color: #fff;
-  font-weight: bold; }
-  .table__top {
+  font-weight: bold;
+
+  &__top {
     width: 70px;
     padding: 5px 8px;
     border: 1px solid #fff;
     border-radius: 10px 10px 0 0;
     margin: 0;
     text-align: center;
-    background-color: #FF267E; }
-  .table__bottom {
+    background-color: #FF267E;;
+  }
+
+  &__bottom {
     width: 70px;
     padding: 5px 8px;
     border: 1px solid #fff;
     border-radius: 0 0 10px 10px;
     margin: 0;
-    text-align: center; }
+    text-align: center;
+  }
+}
 
 .bet {
   display: block;
@@ -117,56 +148,81 @@ body {
   font-weight: bold;
   border: none;
   border-radius: 5px;
-  margin: 0 auto 20px; }
+  margin: 0 auto 20px;
+}
 
 .bet-block {
-  color: #000055; }
+  color: #000055;
+}
 
-.bet-content__list {
-  font-size: 14px;
-  font-weight: bold;
-  text-transform: none;
-  max-width: 270px; }
-.bet-content__item {
-  margin-bottom: 15px; }
-.bet-content__pink-text {
-  color: #FF267E;
-  text-transform: none;
-  margin-left: 20px;
-  font-weight: bold; }
+.bet-content {
+
+  &__list {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: none;
+    max-width: 270px;
+  }
+
+  &__item {
+    margin-bottom: 15px;
+  }
+
+  &__pink-text {
+    color: #FF267E;
+    text-transform: none;
+    margin-left: 20px;
+    font-weight: bold;
+  }
+}
 
 .icons {
   display: flex;
   margin: 0 auto;
   padding-top: 30px;
-  max-width: 85%; }
-  .icons__small {
+  max-width: 85%;
+
+  &__small {
     width: 30px;
     height: 20px;
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 10px;
-    margin-right: 5px; }
-    .icons__small_plus21 {
-      background-image: url("img/21-mob.png"); }
-    .icons__small_visa {
-      background-image: url("img/visa-mob.png"); }
-    .icons__small_mastercard {
-      background-image: url("img/mastercard-mob.png"); }
-  .icons__big {
+    margin-right: 5px;
+
+    &_plus21 {
+      background-image: url("img/21-mob.png");
+    }
+
+    &_visa {
+      background-image: url("img/visa-mob.png");
+    }
+
+    &_mastercard {
+      background-image: url("img/mastercard-mob.png");
+    }
+  }
+
+  &__big {
     width: 100px;
     height: 50px;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
     cursor: pointer;
-    border: none; }
-    .icons__big_apple {
+    border: none;
+
+    &_apple {
       background-image: url("img/apple-mob.png");
-      margin-right: 10px; }
-    .icons__big_google {
+      margin-right: 10px;
+    }
+
+    &_google {
       background-image: url("img/google-mob.png");
-      width: 110px; }
+      width: 110px;
+    }
+  }
+}
 
 .bonus {
   width: 100%;
@@ -176,35 +232,51 @@ body {
   font-size: 23px;
   color: #000055;
   background: #FF267E;
-  position: relative; }
-  .bonus__text {
-    padding-top: 5px; }
-    .bonus__text::before {
+  position: relative;
+
+  &__text {
+    padding-top: 5px;
+
+    &::before {
       content: url("img/arrow.png");
       position: absolute;
-      left: 80px; }
-    .bonus__text::after {
+      left: 80px;
+    }
+
+    &::after {
       content: url("img/arrow.png");
       position: absolute;
-      right: 80px; }
+      right: 80px;
+    }
+
+  }
+}
 
 .price {
   display: flex;
   margin-left: 20px;
-  padding-top: 10px; }
-  .price__title {
+  padding-top: 10px;
+
+
+  &__title {
     font-size: 40px;
     font-weight: bold;
     color: #fff;
     text-align: left;
-    margin: 0; }
-    .price__title_second {
-      margin-left: 20px; }
-  .price__subtitle {
+    margin: 0;
+
+    &_second {
+      margin-left: 20px;
+    }
+  }
+
+  &__subtitle {
     font-size: 15px;
     font-weight: bold;
     color: #fff;
-    margin: 0; }
+    margin: 0;
+  }
+}
 
 .circle {
   color: #fff;
@@ -212,7 +284,8 @@ body {
   border-radius: 50%;
   font-size: 20px;
   font-weight: bold;
-  padding: 0 8px; }
+  padding: 0 8px;
+}
 
 .howDoBet {
   color: #CCCCCC;
@@ -221,18 +294,24 @@ body {
   border: none;
   padding: 6px 24px;
   cursor: pointer;
-  margin-left: 20%; }
+  margin-left: 20%;
+}
 
 .video {
-  position: relative; }
-  .video__poster {
+  position: relative;
+
+  &__poster {
     max-width: 310px;
-    margin: 20px; }
-  .video__title {
+    margin: 20px;
+  }
+
+  &__title {
     margin-left: 20px;
     font-weight: bold;
-    max-width: 150px; }
-  .video__play {
+    max-width: 150px;
+  }
+
+  &__play {
     position: absolute;
     top: 90px;
     left: 50%;
@@ -242,18 +321,24 @@ body {
     background-size: cover;
     background-color: transparent;
     border: none;
-    cursor: pointer; }
-    .video__play:hover {
-      transform: scale(1.1); }
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
 
 iframe {
-  width: 350px; }
+  width: 350px;
+}
 
 .close {
   position: absolute;
   margin: -51px 0 0 301px;
   cursor: pointer;
-  background: #FF267E; }
+  background: #FF267E;
+}
 
 #window {
   display: none;
@@ -266,8 +351,9 @@ iframe {
   position: fixed;
   left: 0;
   right: 0;
-  top: 0;
-  bottom: 0; }
+  top:0;
+  bottom: 0;
+}
 
 #gray {
   opacity: 0.8;
@@ -276,45 +362,59 @@ iframe {
   position: fixed;
   left: 0;
   right: 0;
-  top: 0;
+  top:0;
   bottom: 0;
   display: none;
-  z-index: 100;
-  overflow: auto; }
+  z-index:100;
+  overflow: auto;
+}
 
 .footer {
   background: #000055;
   position: relative;
-  z-index: 5; }
+  z-index: 5;
+}
 
 @media screen and (min-width: 768px) {
   .bonus {
-    display: none; }
+    display: none;
+  }
 
   .poster {
-    min-height: 480px; }
-    .poster__man {
+    min-height: 480px;
+
+    &__man {
       height: 350px;
-      top: 105px; }
-    .poster__text {
+      top: 105px;
+    }
+
+    &__text {
       height: 60px;
       font-size: 40px;
-      padding-top: 10px; }
+      padding-top: 10px;
+    }
+  }
 
   .blue {
-    min-height: 480px; }
+    min-height: 480px;
+  }
 
   .price {
     position: relative;
-    padding-top: 0; }
-    .price__block {
+    padding-top: 0;
+
+    &__block {
       display: flex;
-      padding-top: 5px; }
-    .price__subtitle {
+      padding-top: 5px;
+    }
+
+    &__subtitle {
       font-size: 12px;
       max-width: 100px;
       color: #FF267E;
-      margin: 10px; }
+      margin: 10px;
+    }
+  }
 
   .circle {
     position: absolute;
@@ -322,78 +422,125 @@ iframe {
     bottom: -4px;
     color: #FF267E;
     border: 1px solid #FF267E;
-    background: #000055; }
+    background: #000055;
+  }
 
   .howDoBet {
-    margin-left: 35%; }
+    margin-left: 35%;
+  }
 
   .border {
-    border-right: 1px solid #FF267E; }
+    border-right: 1px solid #FF267E;
+  }
 
   .footer {
     display: flex;
-    border-top: 1px solid #FF267E; }
+    border-top: 1px solid #FF267E;
+  }
 
   .icons {
-    padding-top: 10px; }
-    .icons__small_plus21 {
-      background-image: url("img/21.svg"); }
-    .icons__small_visa {
-      background-image: url("img/visa.svg"); }
-    .icons__small_mastercard {
-      background-image: url("img/mastercard.svg"); }
-    .icons__big .apple {
-      background-image: url("img/apple.png"); }
-    .icons__big .google {
-      background-image: url("img/google.png"); } }
+    padding-top: 10px;
+
+    &__small {
+
+      &_plus21 {
+        background-image: url("img/21.svg");
+      }
+
+      &_visa {
+        background-image: url("img/visa.svg");
+      }
+
+      &_mastercard {
+        background-image: url("img/mastercard.svg");
+      }
+    }
+
+    &__big {
+
+      .apple {
+        background-image: url("img/apple.png");
+      }
+
+      .google {
+        background-image: url("img/google.png");
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 1200px) {
+
   .wrap {
-    display: flex; }
+    display: flex;
+  }
 
   .poster {
-    width: 60%; }
-    .poster__man {
+    width: 60%;
+
+    &__man {
       max-width: 550px;
       height: auto;
       bottom: 0;
       left: 280px;
       top: 190px;
-      position: absolute; }
-    .poster__text {
+      position: absolute;
+    }
+
+    &__text {
       max-width: 810px;
-      margin-left: 115px; }
-    .poster__logo {
-      max-width: 60%; }
+      margin-left: 115px;
+    }
+
+    &__logo {
+      max-width: 60%;
+    }
+  }
 
   .circle {
-    left: 218px; }
+    left: 218px;
+  }
 
-  .price__title {
-    font-size: 40px;
-    letter-spacing: 6px; }
+  .price {
+
+    &__title {
+      font-size: 40px;
+      letter-spacing: 6px;
+    }
+  }
 
   .blue {
     position: relative;
     width: 40%;
-    min-height: 690px; }
+    min-height: 690px;
+  }
 
   .bet {
     width: 300px;
-    margin: 120px 0 20px 20px; }
+    margin: 120px 0 20px 20px;
+  }
 
   .bet-block {
-    display: flex; }
+    display: flex;
+  }
 
   .howDoBet {
-    margin-left: 0; }
+    margin-left: 0;
+  }
 
   .close {
-    margin: -1px 0 0 800px; }
+    margin: -1px 0 0 800px;
+  }
 
   #window {
-    max-width: 800px; } }
+    max-width: 800px;
+  }
+}
+
 @media screen and (min-width: 1920px) {
   .blue {
-    min-height: 780px; } }
+    min-height: 780px;
+  }
+}
 
-/*# sourceMappingURL=style.css.map */
+
